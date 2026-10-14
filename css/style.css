@@ -4211,3 +4211,125 @@ a.footer-contact-item:hover {
         font-size: 11px;
     }
 }
+/* =========================================
+   MOBILE RESPONSIVE WIDTH FIX
+   SAACHI BOUTIQUE
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .paneri-instagram,
+    .paneri-contact,
+    .paneri-footer,
+    .collection-section,
+    .paneri-story,
+    .why-paneri,
+    .paneri-reviews,
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .instagram-container,
+    .contact-container,
+    .footer-container,
+    .collection-section .container,
+    .paneri-story .container,
+    .why-paneri .container,
+    .paneri-reviews .container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .instagram-grid,
+    .contact-layout,
+    .footer-main {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .instagram-tile,
+    .instagram-tile img,
+    .contact-map-wrap,
+    .contact-map,
+    .contact-map iframe {
+        max-width: 100%;
+    }
+
+    img,
+    iframe {
+        height: auto;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .instagram-tile {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .instagram-tile img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .footer-main {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .instagram-heading,
+    .instagram-bottom,
+    .contact-heading {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .instagram-container,
+    .contact-container,
+    .footer-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .instagram-grid {
+        gap: 10px;
+    }
+}
